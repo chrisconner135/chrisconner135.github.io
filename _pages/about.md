@@ -5,7 +5,7 @@ permalink: /
 subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
-  align: right
+  align: left
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
@@ -27,3 +27,11 @@ social: true # includes social icons at the bottom of the page
 Hello, I'm Chris. A PhD student based in Chicago, Illinois studying superconducting qubit technologies for quantum computing and sensing applications. 
 
 Originally from California, I received a bachelor's degree in physics from UC Santa Barbara. During my time at UCSB, I worked on a muon detector project with Professor David Stuart, then joined [Professor Sumitha Pennathur's lab](https://nanolab.engineering.ucsb.edu/) where I did research in [microfluidics](https://doi.org/10.1103/PhysRevApplied.9.044008) and education outreach. After this, I moved to Chicago, where I currently work with superconducting qubits and mechanical oscillators in the quantum regime as a graduate student in [Professor Andrew Cleland's lab](https://clelandlab.uchicago.edu/).
+
+<div class="row mt-3 justify-content-center">
+    <div class="col-md-9">
+        {% include video.liquid path="assets/video/FridgeTimelapse_60sec_lowres.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+      <div class="caption text-center">
+          Here is a timelapse video I made to give a feel for what it's like to work in a superconducting qubits lab. In this video we are opening one of our dilution refridgerators, removing old samples, updating the microwave wiring, installing new samples, and getting ready for the next measurement cycle.
+      </div>
+    </div>
