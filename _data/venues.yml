@@ -7,3 +7,15 @@
 
 "Vision":
   color: "#009f36"
+
+"APL":
+  url: https://pubs.aip.org/aip/apl
+  color: "#e69138"
+
+"PRA":
+  url: https://journals.aps.org/prapplied/
+  color: "#8fce00"
+
+"PRD":
+  url: https://journals.aps.org/prd/
+  color: "#cc0000"
