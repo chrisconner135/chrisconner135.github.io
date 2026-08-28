@@ -158,7 +158,7 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
-  - _pages/photography.md
+  # - _pages/photography.md
   - _pages/projects.md
   - _pages/profiles.md
   - _pages/teaching.md
