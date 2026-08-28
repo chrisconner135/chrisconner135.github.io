@@ -30,8 +30,9 @@ Originally from California, I received a bachelor's degree in physics from UC Sa
 
 <div class="row mt-3 justify-content-center">
     <div class="col-md-9">
-        {% include video.liquid path="assets/video/FridgeTimelapse_60sec_lowres.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include video.liquid path="assets/video/FridgeTimelapse_60sec_lowres.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true muted=true loop=true %}
       <div class="caption text-center">
           Here is a timelapse video I made to give a feel for what it's like to work in a superconducting qubits lab. In this video we are opening one of our dilution refrigerators, removing old samples, updating the microwave wiring, installing new samples, and getting ready for the next measurement cycle.
       </div>
     </div>
+</div>
