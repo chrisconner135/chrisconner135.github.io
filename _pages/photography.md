@@ -2,7 +2,7 @@
 layout: page
 permalink: /photography/
 title: photography
-nav: true
+nav: false
 nav_order: 3
 description: 
 ---
