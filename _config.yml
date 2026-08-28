@@ -277,8 +277,8 @@ terser:
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Conner]
+  first_name: ["Christopher", "Chistopher Reed", "Christopher R.", "C. R.", "C."]
 
   style: apa
   locale: en
