@@ -9,11 +9,11 @@ images:
   slider: true
 ---
 
-<!-- <style>
+<style>
   .post-title, .page-heading {
     display: none;
   }
-</style> -->
+</style>
 
 <swiper-container 
   keyboard="true" 
