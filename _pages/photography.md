@@ -1,19 +1,19 @@
 ---
 layout: page
 permalink: /photography/
-title: photo gallery
-nav: false
+title: photography
+nav: true
 nav_order: 3
 description: 
 images:
   slider: true
 ---
 
-<!-- <style>
+<style>
   .post-title, .page-heading {
     display: none;
   }
-</style> -->
+</style>
 
 <swiper-container 
   keyboard="true" 
@@ -26,22 +26,28 @@ images:
   autoplay-disable-on-interaction="false"
   style="height: 500px;"> <!-- Adjust slider height here -->
   
-  {% assign lab_images = site.static_files | where_exp: "item", "item.path contains '/assets/img/gallery/lab/'" %}
+  {% assign lab_images = site.static_files | where_exp: "item", "item.path contains '/assets/img/gallery/lab/'" | sort: "path" %}
   {% for file in lab_images %}
     {% unless file.extname == '.webp' %}
       {% assign relative_path = file.path | remove_first: '/' %}
-      <swiper-slide style="display: flex; justify-content: center; align-items: center; height: 100%;">
+      <swiper-slide>
         <div class="swiper-image-wrapper">
           {% include figure.liquid loading="eager" path=relative_path class="img-fluid rounded z-depth-1" %}
         </div>
       </swiper-slide>
     {% endunless %}
   {% endfor %}
-
 </swiper-container>
 
-<!-- Custom styling to prevent al-folio image cropping -->
 <style>
+  /* Swiper slide alignment */
+  swiper-slide {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100% !important;
+  }
+
   .swiper-image-wrapper {
     height: 100%;
     width: 100%;
@@ -50,15 +56,23 @@ images:
     align-items: center;
   }
 
-  /* Force al-folio generated figure, picture, and img elements to respect container boundaries */
-  .swiper-image-wrapper figure,
+  /* Force al-folio's figure wrapper to fit the slider height */
+  .swiper-image-wrapper figure {
+    height: 100% !important;
+    max-height: 500px !important; /* Matches container height */
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  /* Override img-fluid width:100% on desktop so tall images constrain by height */
   .swiper-image-wrapper picture,
   .swiper-image-wrapper img {
-    max-height: 100% !important;
+    max-height: 500px !important;
     max-width: 100% !important;
-    width: auto !important;
+    width: auto !important; /* Overrides Bootstrap img-fluid width: 100% */
     height: auto !important;
     object-fit: contain !important;
-    margin: 0 auto;
   }
 </style>
