@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /photography/
-title: photo gallery
+title: photography
 nav: true
 nav_order: 3
 description: 
