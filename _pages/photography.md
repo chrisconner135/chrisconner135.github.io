@@ -26,7 +26,7 @@ images:
   autoplay-disable-on-interaction="false"
   style="height: 500px;"> <!-- Adjust slider height here -->
   
-  {% assign lab_images = site.static_files | where_exp: "item", "item.path contains '/assets/img/gallery/lab/'" %}
+  {% assign lab_images = site.static_files | where_exp: "item", "item.path contains '/assets/img/gallery/lab/'" | sort: "path" %}
   {% for file in lab_images %}
     {% unless file.extname == '.webp' %}
       {% assign relative_path = file.path | remove_first: '/' %}
