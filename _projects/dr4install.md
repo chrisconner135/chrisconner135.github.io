@@ -18,3 +18,31 @@ We recently underwent a big project in our lab involving lots of work with our d
       </div>
     </div>
 </div>
+
+<div class="row mt-3 justify-content-center">
+    <div class="col-md-12" style="max-width: 75%;">
+        {% include figure.liquid
+            loading="eager"
+            path="assets/img/DR4_pumproom.jpg"
+            title="pump room"
+            class="img-fluid rounded z-depth-1"
+            zoomable=true
+        %}
+      <div class="caption text-center">
+        I am also especially proud of how nicely we wrapped up the compressor lines in our pump room on the other side of the wall.
+      </div>
+    </div>
+</div>
+
+<div class="row mt-3 justify-content-center">
+    <div class="col-12" style="max-width: 50%;">
+        {% include figure.liquid 
+            loading="eager" 
+            path="assets/img/vacuumlinememe.png" 
+            title="pump room" 
+            caption="And of course it's the little things like this that I got to fix along the way that make jobs like this extra satisfying." 
+            class="img-fluid rounded z-depth-1" 
+            zoomable=true 
+        %}
+    </div>
+</div>
