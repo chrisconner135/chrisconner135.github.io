@@ -1,4 +1,5 @@
 # al-folio
+To test locally, run the docker applicatoin, then run the commands `docker compose pull` then run `docker compose up`. For Docker install, etc. See al-folio github page.
 
 <div align="center">
 
